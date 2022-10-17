@@ -43,8 +43,7 @@ elementów `<h1>...<h6>`, `<p>` i `<ul>`.
 **`«B2»`** Elementy nie mają marginesów zewnętrznych (właściwość `margin`),
 które „przebijają” element nadrzędny (rodzicielski).
 
-**`«B3»`** W kolekcjach elementów z jednym wierszem usunięto skrajny lewy lub
-skrajny prawy `margin` elementów (jeśli istnieje).
+**`«B3»`** W elementach które są ustawione obok siebie i odstęp między nimi jest utworzony za pomocą marginesów usunięto ten margines w skrajnych elementach (ostatni lub pierwszy)
 
 **`«B4»`** Właściwość `margin` jest używana w przypadku marginesów między dwoma
 sąsiednimi elementami.
@@ -57,12 +56,11 @@ wewnętrznych (właściwość `padding`) elementów są ustawiane dokładnie zgo
 układem.
 
 **`«B7»`** Utworzono ogólną klasę pomocniczą `.container` do wyśrodkowywania i
-ograniczania szerokości zawartości.
+ograniczania szerokości zawartości. Klasa ta jest używana wewnątrz każdej sekcji.
 
-**`«B8»`** Szerokość `.container` jest zgodna z układem i wynosi `1200px`.
+**`«B8»`** Szerokość klasy `.container` jest zgodna z układem i wynosi `1200px`.
 
-**`«B9»`** `.container` otacza zawartość nagłówka, stopki i sekcji. Oznacza to,
-że jest wewnątrz nich.
+**`«B9»`** Klasa `.container` znajduje się w środku każdej sekcji, nagłówku oraz stopce.
 
 **`«B10»`** Użyj `Flexbox` do rozmieszczenia elementów, ale tylko w razie
 potrzeby. Na przykład w nagłówku, nawigacji, listach w sekcjach itd., czyli tam,
@@ -70,18 +68,15 @@ gdzie nie można inaczej rozmieścić elementów w poziomie
 
 **`«B11»`** Ostateczne rozmiary bloków w przeglądarce odpowiadają układowi.
 
-**`«B12»`** Elementy nie mają ustalonej wysokości, zależy to od ich zawartości.
+**`«B12»`** Sekcje nie powinny mieć na sztywno ustawionej wysokości.
 
-**`«B13»`** `Header` ma dolne obramowanie, musisz bardzo powiększyć, aby go
-zobaczyć.
+**`«B13»`** `Header` zgodnie z figmą powinnień mieć border-bottom o grubość 1px.
 
 **`«B14»`** Sekcje są ułożone jedna pod drugą jak stos książek, bez zewnętrznych
-marginesów.
+marginesów
 
-**`«B15»`** Dla wszystkich sekcji używana jest jedna klasa `.section`, górne i
-dolne `padding` są ustawione na `94px`, wypychając zawartość do wnętrza sekcji.
+**`«B15»`** Odstępy między sekcjami powinny być zrobione za pomocą paddingów przy użyciu klasy `.section`. Paddingi górne jak i dolne mają mieć wartość `94px` pozwoli to zachować odpowiedni odstęp od następnych sekcji.
 
-**`«B16»`** Do budowy siatek wykorzystywana jest technika opisana w konspekcie.
+**`«B16»`** Do ustawienia elementów w poszczególnych sekcjach obok siebie wykorzystano technikę opisaną w konspekcie
 
-**`«B17»`** Karty na stronie `Portfolio` mają obramowanie (właściwość `border`),
-ale tylko na dole karty.
+**`«B17»`** Karty na stronie `Portfolio` w swojej dolnej części (z nazwą realizacji i kategorią)  mają mieć właściwość border. Górna część (tam gdzie jest obrazek) nie posiada obramowania.
